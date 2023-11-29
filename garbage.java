@@ -1,4 +1,5 @@
 import java.util.*;
+import java.lang.*;
 
 class Employee {
     protected void finalize() {
@@ -17,9 +18,9 @@ public class garbage {
         e = null;
         
 
-        // It's generally not recommended to explicitly call System.gc()
+       
         System.gc();
 
-        // Letting the JVM decide when to perform garbage collection
+       
     }
 }
